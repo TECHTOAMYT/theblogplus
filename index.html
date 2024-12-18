@@ -2,77 +2,121 @@
 <html lang="en">
 <head>
 
-    <meta name="google-adsense-account" content="ca-pub-6700613757323923">
+<meta name="google-adsense-account" content="ca-pub-6700613757323923">
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore professional blog articles about technology, trends, and more. Stay informed and inspired!">
-    <title>Professional Blog - Home</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="google-adsense-account" content="ca-pub-6700613757323923">
+    <meta name="description" content="A professional blog featuring articles on web development, blockchain, edge computing, AI, cybersecurity, and more.">
+    <meta name="author" content="Your Name">
+    <title>Tech Insights Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <div id="loading-screen">
-        <div class="spinner"></div>
-    </div>
 
+    <!-- Header Section -->
     <header>
-        <div class="container">
-            <h1><a href="index.html">ProBlog</a></h1>
+        <div class="logo">
+            <img src="images/logo.png" alt="Tech Insights Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="terms.html">Terms</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <section class="featured-article">
+            <h1>Featured Articles</h1>
+
+            <!-- Article 1 -->
+            <article class="article-preview">
+                <a href="article1.html">
+                    <img src="images/web-dev-thumbnail.jpg" alt="Web Development" class="article-thumbnail">
+                    <h2>Introduction to Web Development</h2>
+                    <p>Explore the basics of web development, HTML, CSS, and JavaScript in this comprehensive guide for beginners.</p>
+                </a>
+            </article>
+
+            <!-- Article 2 -->
+            <article class="article-preview">
+                <a href="article2.html">
+                    <img src="images/edge-computing-thumbnail.jpg" alt="Edge Computing" class="article-thumbnail">
+                    <h2>The Rise of Edge Computing</h2>
+                    <p>Understand how edge computing is transforming industries and offering faster data processing at the edge of the network.</p>
+                </a>
+            </article>
+
+            <!-- Article 3 -->
+            <article class="article-preview">
+                <a href="article3.html">
+                    <img src="images/blockchain-thumbnail.jpg" alt="Blockchain Technology" class="article-thumbnail">
+                    <h2>Blockchain Beyond Cryptocurrency</h2>
+                    <p>Discover the many uses of blockchain technology outside of cryptocurrency, such as supply chain, healthcare, and voting systems.</p>
+                </a>
+            </article>
+
+            <!-- Article 4 -->
+            <article class="article-preview">
+                <a href="article4.html">
+                    <img src="images/web-scraping-thumbnail.jpg" alt="Web Scraping" class="article-thumbnail">
+                    <h2>Web Scraping with Python and BeautifulSoup</h2>
+                    <p>Learn how to scrape data from websites using Python’s BeautifulSoup and requests library for web data extraction.</p>
+                </a>
+            </article>
+
+            <!-- Article 5 -->
+            <article class="article-preview">
+                <a href="article5.html">
+                    <img src="images/ai-future-thumbnail.jpg" alt="Future of AI" class="article-thumbnail">
+                    <h2>The Future of Artificial Intelligence</h2>
+                    <p>Explore the potential future of AI in various industries, including healthcare, automation, and everyday life.</p>
+                </a>
+            </article>
+
+            <!-- Article 6 -->
+            <article class="article-preview">
+                <a href="article6.html">
+                    <img src="images/cybersecurity-thumbnail.jpg" alt="Cybersecurity" class="article-thumbnail">
+                    <h2>The Importance of Cybersecurity in 2024</h2>
+                    <p>As cyber threats evolve, understand why cybersecurity is crucial and how organizations can protect themselves in 2024.</p>
+                </a>
+            </article>
+        </section>
+
+        <section class="recent-posts">
+            <h1>Recent Posts</h1>
+            <ul>
+                <li><a href="article1.html">Introduction to Web Development</a></li>
+                <li><a href="article2.html">The Rise of Edge Computing</a></li>
+                <li><a href="article3.html">Blockchain Beyond Cryptocurrency</a></li>
+                <li><a href="article4.html">Web Scraping with Python</a></li>
+                <li><a href="article5.html">The Future of Artificial Intelligence</a></li>
+                <li><a href="article6.html">The Importance of Cybersecurity in 2024</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Your Name. All Rights Reserved.</p>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="feedback.html">Feedback</a></li>
-                    <li><a href="support.html">Support</a></li>
-                    <li><a href="privacy.html">Privacy</a></li>
                     <li><a href="terms.html">Terms</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
                 </ul>
             </nav>
         </div>
-    </header>
-
-    <main>
-        <div class="container">
-            <section class="hero">
-                <h2>Welcome to ProBlog</h2>
-                <p>Your go-to destination for insightful articles on technology, trends, and much more!</p>
-                <a href="#articles" class="cta-btn">Explore Articles</a>
-            </section>
-
-            <section id="articles" class="blog-list">
-                <h2>Featured Articles</h2>
-                <article>
-                    <h3><a href="article1.html">The Future of Artificial Intelligence</a></h3>
-                    <img src="images/ai.jpg" alt="Artificial Intelligence">
-                    <p>AI is transforming industries worldwide. Discover the latest trends in Artificial Intelligence in 2024.</p>
-                    <a href="article1.html" class="read-more">Read More</a>
-                </article>
-                
-                <article>
-                    <h3><a href="article2.html">Top 5 Cybersecurity Trends</a></h3>
-                    <img src="images/cybersecurity.jpg" alt="Cybersecurity">
-                    <p>Stay secure in the digital age with the top cybersecurity practices for 2024 and beyond.</p>
-                    <a href="article2.html" class="read-more">Read More</a>
-                </article>
-
-                <article>
-                    <h3><a href="article3.html">Quantum Computing Simplified</a></h3>
-                    <img src="images/quantum.jpg" alt="Quantum Computing">
-                    <p>Quantum computing is no longer a dream. Learn how it’s shaping the future of technology.</p>
-                    <a href="article3.html" class="read-more">Read More</a>
-                </article>
-            </section>
-        </div>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 ProBlog. All Rights Reserved. <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
-        </div>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
