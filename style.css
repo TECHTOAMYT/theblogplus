@@ -6,14 +6,12 @@ body, html {
     background: #f9f9f9;
     color: #333;
     line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
 }
 
 .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px 0;
 }
 
 /* Loading Screen */
@@ -55,7 +53,6 @@ header h1 a {
     text-decoration: none;
     color: white;
     font-size: 2rem;
-    transition: color 0.3s ease;
 }
 
 header nav ul {
@@ -72,12 +69,6 @@ header nav ul li {
 header nav ul li a {
     text-decoration: none;
     color: white;
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
-}
-
-header nav ul li a:hover {
-    color: #f1f1f1;
 }
 
 /* Hero Section */
@@ -95,7 +86,6 @@ header nav ul li a:hover {
 
 .hero p {
     font-size: 1.2rem;
-    color: #555;
 }
 
 .hero .cta-btn {
@@ -117,14 +107,12 @@ header nav ul li a:hover {
 /* Articles */
 .blog-list {
     padding: 40px 0;
-    background: #fff;
 }
 
 .blog-list h2 {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #333;
 }
 
 .blog-list article {
@@ -133,25 +121,18 @@ header nav ul li a:hover {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease;
-}
-
-.blog-list article:hover {
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .blog-list article img {
     width: 100%;
-    height: auto;  /* Ensure the image height adjusts according to width */
+    height: auto;
     border-radius: 5px;
     margin-bottom: 10px;
-    object-fit: cover;  /* Maintains image aspect ratio while filling the container */
+    object-fit: cover; /* Maintains aspect ratio while covering the container */
 }
 
 .blog-list article h3 {
     margin-top: 0;
-    font-size: 1.5rem;
-    color: #333;
 }
 
 .read-more {
@@ -162,8 +143,6 @@ header nav ul li a:hover {
     background: #4CAF50;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 1rem;
-    transition: background 0.3s ease;
 }
 
 .read-more:hover {
@@ -179,81 +158,65 @@ footer {
     margin-top: 40px;
 }
 
-/* AdSense Optimization */
-.ad-container {
-    margin: 20px 0;
-    padding: 20px;
-    background-color: #f5f5f5;
-    text-align: center;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+/* Responsive Images: Ensuring proper scaling on smaller devices */
+img {
+    max-width: 100%; /* Ensure images scale with their container */
+    height: auto;    /* Maintain aspect ratio */
+    object-fit: cover; /* Crop the image to fit, if necessary */
 }
 
-.ad-container img {
-    width: 100%; /* Ensures ad images scale correctly */
-    height: auto;
-    margin-bottom: 15px;
-}
+/* Responsive Design Adjustments */
 
-.ad-container p {
-    font-size: 1rem;
-    color: #555;
-}
-
-.ad-container a {
-    color: #4CAF50;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.ad-container a:hover {
-    color: #45a049;
-}
-
-/* Responsive Design */
+/* On smaller screens, reduce padding and font size for better readability */
 @media (max-width: 768px) {
-    header h1 a {
-        font-size: 1.5rem;
-    }
-
-    header nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
     .hero h2 {
         font-size: 2rem;
     }
 
     .hero p {
-        font-size: 1.1rem;
+        font-size: 1rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header nav ul li {
+        margin: 0 10px;
+    }
+
+    .blog-list h2 {
+        font-size: 1.5rem;
     }
 
     .blog-list article {
         padding: 15px;
     }
+}
 
-    .blog-list article img {
-        max-height: 300px;
-        width: 100%;
-        object-fit: cover;
+/* On mobile devices, ensure articles and text remain readable */
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    .blog-list h2 {
+        font-size: 1.3rem;
+    }
+
+    .blog-list article {
+        padding: 10px;
     }
 
     .read-more {
         font-size: 0.9rem;
     }
-
-    .ad-container {
-        margin: 20px 0;
-        padding: 15px;
-    }
-}
-
-a {
-    text-decoration: none;
-    color: #4CAF50;
-}
-
-a:hover {
-    color: #45a049;
 }
