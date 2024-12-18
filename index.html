@@ -3,27 +3,60 @@
 <head>
 
     <meta name="google-adsense-account" content="ca-pub-6700613757323923">
-
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Explore professional blog articles about technology, trends, and more. Stay informed and inspired!">
-    <title>Professional Blog - Home</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="keywords" content="Blog, Technology, AI, Cybersecurity, Quantum Computing, Data Science, Blockchain, Web Development, Innovation, IoT, Cloud Computing">
+    <meta name="author" content="ProBlog">
+    <meta name="google-adsense-account" content="ca-pub-6700613757323923">
 
-<meta name="google-adsense-account" content="ca-pub-6700613757323923">
+    <title>ProBlog - Insightful Articles on Technology and Trends</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Responsive Image Styling */
+        .responsive-img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Additional spacing for articles */
+        .blog-list article {
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            /* Smaller devices adjustments */
+            .blog-list h3 {
+                font-size: 1.2rem;
+            }
+
+            .blog-list p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+
+
+    <meta name="google-adsense-account" content="ca-pub-6700613757323923">
+    
 </head>
 <body>
+    <!-- Loading Screen -->
     <div id="loading-screen">
         <div class="spinner"></div>
     </div>
 
+    <!-- Header Section -->
     <header>
         <div class="container">
             <h1><a href="index.html">ProBlog</a></h1>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="feedback.html">Feedback</a></li>
@@ -35,40 +68,68 @@
         </div>
     </header>
 
+    <!-- Main Content -->
     <main>
         <div class="container">
+            <!-- Hero Section -->
             <section class="hero">
                 <h2>Welcome to ProBlog</h2>
                 <p>Your go-to destination for insightful articles on technology, trends, and much more!</p>
                 <a href="#articles" class="cta-btn">Explore Articles</a>
             </section>
 
+            <!-- Blog Articles Section -->
             <section id="articles" class="blog-list">
                 <h2>Featured Articles</h2>
+
+                <!-- Articles with Updated Responsive Images -->
                 <article>
                     <h3><a href="article1.html">The Future of Artificial Intelligence</a></h3>
-                    <img src="images/ai.jpg" alt="Artificial Intelligence">
+                    <img src="images/ai.jpg" alt="Artificial Intelligence" class="responsive-img">
                     <p>AI is transforming industries worldwide. Discover the latest trends in Artificial Intelligence in 2024.</p>
                     <a href="article1.html" class="read-more">Read More</a>
                 </article>
 
                 <article>
                     <h3><a href="article2.html">Top 5 Cybersecurity Trends</a></h3>
-                    <img src="images/cybersecurity.jpg" alt="Cybersecurity">
+                    <img src="images/cybersecurity.jpg" alt="Cybersecurity" class="responsive-img">
                     <p>Stay secure in the digital age with the top cybersecurity practices for 2024 and beyond.</p>
                     <a href="article2.html" class="read-more">Read More</a>
                 </article>
 
                 <article>
                     <h3><a href="article3.html">Quantum Computing Simplified</a></h3>
-                    <img src="images/quantum.jpg" alt="Quantum Computing">
+                    <img src="images/quantum.jpg" alt="Quantum Computing" class="responsive-img">
                     <p>Quantum computing is no longer a dream. Learn how it’s shaping the future of technology.</p>
                     <a href="article3.html" class="read-more">Read More</a>
+                </article>
+
+                <!-- New Articles -->
+                <article>
+                    <h3><a href="article11.html">Cloud Computing for Small Businesses</a></h3>
+                    <img src="images/cloud-computing.jpg" alt="Cloud Computing" class="responsive-img">
+                    <p>Learn how cloud computing can empower small businesses to scale efficiently and cost-effectively.</p>
+                    <a href="article11.html" class="read-more">Read More</a>
+                </article>
+
+                <article>
+                    <h3><a href="article12.html">5 Best Practices for Mobile App Development</a></h3>
+                    <img src="images/mobile-app.jpg" alt="Mobile App Development" class="responsive-img">
+                    <p>Discover the essential practices for developing high-performance and user-friendly mobile apps.</p>
+                    <a href="article12.html" class="read-more">Read More</a>
+                </article>
+
+                <article>
+                    <h3><a href="article13.html">How to Build a Career in Software Engineering</a></h3>
+                    <img src="images/software-career.jpg" alt="Career in Software Engineering" class="responsive-img">
+                    <p>Explore actionable steps to kickstart your career in software engineering and achieve your goals.</p>
+                    <a href="article13.html" class="read-more">Read More</a>
                 </article>
             </section>
         </div>
     </main>
 
+    <!-- Footer Section -->
     <footer>
         <div class="container">
             <p>&copy; 2024 ProBlog. All Rights Reserved. <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
