@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about cybersecurity threats, tips to stay safe online, and tools to protect yourself.">
+    <title>Cybersecurity in the Digital Age - ProBlog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html">ProBlog</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="article1.html">AI</a></li>
+                    <li><a href="article2.html" class="active">Cybersecurity</a></li>
+                    <li><a href="article3.html">Quantum Computing</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Cybersecurity in the Digital Age: Stay Safe Online</h2>
+            <img src="images/cybersecurity.jpg" alt="Cybersecurity" class="article-img">
+
+            <p>With the increasing reliance on digital platforms, cybersecurity has become a top priority. Data breaches, phishing attacks, and ransomware are just a few of the threats that individuals and businesses face daily.</p>
+
+            <h3>Top Cybersecurity Threats</h3>
+            <ol>
+                <li><strong>Phishing:</strong> Fraudulent emails or messages designed to steal personal information.</li>
+                <li><strong>Ransomware:</strong> Malware that encrypts data until a ransom is paid.</li>
+                <li><strong>Data Breaches:</strong> Unauthorized access to sensitive information.</li>
+                <li><strong>Social Engineering:</strong> Manipulating individuals into revealing confidential information.</li>
+            </ol>
+
+            <h3>Best Practices for Staying Safe</h3>
+            <ul>
+                <li>Use strong, unique passwords and enable two-factor authentication (2FA).</li>
+                <li>Keep software and systems up to date.</li>
+                <li>Be cautious of suspicious emails and links.</li>
+                <li>Invest in a reliable antivirus and firewall.</li>
+            </ul>
+
+            <h3>Programming Example: Encrypting Data with Python</h3>
+            <pre>
+# Python example of encrypting a message using Fernet
+from cryptography.fernet import Fernet
+
+# Generate a key and encrypt a message
+key = Fernet.generate_key()
+cipher_suite = Fernet(key)
+
+message = b"Sensitive Information"
+encrypted_message = cipher_suite.encrypt(message)
+
+print("Encrypted:", encrypted_message)
+print("Decrypted:", cipher_suite.decrypt(encrypted_message))
+            </pre>
+
+            <h3>Notes</h3>
+            <blockquote>
+                <p>"Cybersecurity is not just about technology—it's about people. Awareness and education are the first lines of defense."</p>
+            </blockquote>
+
+            <h3>Useful Tools</h3>
+            <ul>
+                <li><a href="https://www.lastpass.com/" target="_blank">LastPass: Password Manager</a></li>
+                <li><a href="https://www.malwarebytes.com/" target="_blank">Malwarebytes: Anti-Malware Software</a></li>
+                <li><a href="https://www.kaspersky.com/" target="_blank">Kaspersky: Antivirus Solutions</a></li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 ProBlog. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
