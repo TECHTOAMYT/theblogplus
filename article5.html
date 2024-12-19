@@ -4,8 +4,8 @@
     <meta name="google-adsense-account" content="ca-pub-6700613757323923">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore the future of artificial intelligence and its impact on various industries like healthcare, transportation, and education.">
-    <title>The Future of Artificial Intelligence</title>
+    <meta name="description" content="Discover how blockchain technology works and its applications in various industries.">
+    <title>Understanding Blockchain Technology - ProBlog</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,11 +16,9 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="feedback.html">Feedback</a></li>
-                    <li><a href="support.html">Support</a></li>
-                    <li><a href="privacy.html">Privacy</a></li>
-                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="article4.html">5G Technology</a></li>
+                    <li><a href="article5.html" class="active">Blockchain</a></li>
+                    <li><a href="article6.html">Electric Vehicles</a></li>
                 </ul>
             </nav>
         </div>
@@ -28,66 +26,61 @@
 
     <main>
         <div class="container">
-            <article>
-                <img src="images/ai-future.jpg" alt="Future of AI">
-                <h2>The Future of Artificial Intelligence</h2>
-                <p>Artificial Intelligence (AI) has progressed immensely over the last decade. What was once the realm of science fiction is now becoming a major part of our daily lives. In this article, we explore the future of AI and its impact on society.</p>
+            <h2>Understanding Blockchain Technology: The Foundation of Digital Transformation</h2>
+            <img src="images/blockchain.jpg" alt="Blockchain Technology" class="article-img">
 
-                <h3>AI in Healthcare</h3>
-                <p>AI is already revolutionizing healthcare, from improving diagnosis accuracy to personalizing treatment plans. With AI’s ability to analyze vast amounts of medical data, doctors can make better decisions faster.</p>
+            <p><strong>Blockchain technology</strong> is transforming the way we store, verify, and share data. With its decentralized, secure, and transparent structure, blockchain has become a cornerstone of innovation in finance, supply chain, healthcare, and beyond.</p>
 
-                <h3>AI in Transportation</h3>
-                <p>Self-driving cars are one of the most talked-about applications of AI. Companies like Tesla and Waymo are leading the charge in creating autonomous vehicles that can navigate cities without human intervention.</p>
+            <h3>How Blockchain Works</h3>
+            <ul>
+                <li><strong>Decentralization:</strong> Eliminates the need for intermediaries by distributing data across multiple nodes.</li>
+                <li><strong>Immutability:</strong> Once a transaction is recorded, it cannot be altered.</li>
+                <li><strong>Transparency:</strong> All transactions are visible to participants, ensuring accountability.</li>
+                <li><strong>Security:</strong> Advanced cryptographic algorithms protect data from unauthorized access.</li>
+            </ul>
 
-                <h3>AI in Education</h3>
-                <p>In education, AI-powered tools are enabling personalized learning experiences. Adaptive learning platforms use AI to assess students’ strengths and weaknesses, tailoring lessons to their individual needs.</p>
+            <h3>Programming Example: Creating a Simple Blockchain</h3>
+            <pre>
+# Python example of a simple blockchain
+import hashlib
 
-                <h3>Program Example: AI Chatbot</h3>
-                <p>Here’s an example of a simple AI chatbot using JavaScript:</p>
+class Block:
+    def __init__(self, index, data, previous_hash):
+        self.index = index
+        self.data = data
+        self.previous_hash = previous_hash
+        self.hash = self.compute_hash()
 
-                <pre><code>
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;title&gt;AI Chatbot&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;h1&gt;AI Chatbot&lt;/h1&gt;
-    &lt;div id="chatbox"&gt;Hello! How can I help you today?&lt;/div&gt;
-    &lt;input type="text" id="user-input" placeholder="Type here..."&gt;
-    &lt;button onclick="generateResponse()"&gt;Send&lt;/button&gt;
-    &lt;script&gt;
-      function generateResponse() {
-        var userInput = document.getElementById('user-input').value;
-        var chatbox = document.getElementById('chatbox');
-        if (userInput.includes("hello")) {
-          chatbox.innerHTML = "Hi! How can I assist you?";
-        } else {
-          chatbox.innerHTML = "I didn’t quite understand. Can you say that again?";
-        }
-      }
-    &lt;/script&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-                </code></pre>
+    def compute_hash(self):
+        block_string = f"{self.index}{self.data}{self.previous_hash}"
+        return hashlib.sha256(block_string.encode()).hexdigest()
 
-                <h3>External Resources:</h3>
-                <ul>
-                    <li><a href="https://openai.com/">OpenAI Official Website</a></li>
-                    <li><a href="https://www.technologyreview.com/ai/">MIT Technology Review on AI</a></li>
-                </ul>
+# Create a blockchain
+block1 = Block(1, "First Block Data", "0")
+block2 = Block(2, "Second Block Data", block1.hash)
+print("Block 1 Hash:", block1.hash)
+print("Block 2 Hash:", block2.hash)
+            </pre>
 
-                <h3>Conclusion</h3>
-                <p>Artificial Intelligence will continue to reshape industries and society in ways we can only begin to imagine. By understanding its potential and challenges, we can better prepare for an AI-driven future.</p>
-            </article>
+            <h3>Applications of Blockchain</h3>
+            <blockquote>
+                <p>Blockchain is revolutionizing industries by enhancing transparency, efficiency, and trust in processes like financial transactions, supply chain tracking, and digital identity management.</p>
+            </blockquote>
+
+            <h3>Further Reading</h3>
+            <p>Explore these resources to learn more about blockchain:</p>
+            <ul>
+                <li><a href="https://ethereum.org/" target="_blank">Ethereum: Blockchain Platform for Smart Contracts</a></li>
+                <li><a href="https://www.ibm.com/blockchain" target="_blank">IBM Blockchain Solutions</a></li>
+                <li><a href="https://bitcoin.org/" target="_blank">Bitcoin: The Original Cryptocurrency</a></li>
+            </ul>
         </div>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 ProBlog. All Rights Reserved. <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+            <p>&copy; 2024 ProBlog. All Rights Reserved.</p>
         </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
