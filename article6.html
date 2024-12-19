@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="google-adsense-account" content="ca-pub-6700613757323923">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-adsense-account" content="ca-pub-6700613757323923">
-    <meta name="description" content="Exploring the Evolution of Web Development - From HTML to modern frameworks like React. Learn the latest in web technologies and trends.">
-    <title>Article 6 - The Evolution of Web Development</title>
+    <meta name="description" content="Explore how electric vehicles are reshaping the automotive industry, reducing emissions, and revolutionizing transportation.">
+    <title>The Rise of Electric Vehicles - ProBlog</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
         <div class="container">
             <h1><a href="index.html">ProBlog</a></h1>
@@ -17,11 +16,9 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="feedback.html">Feedback</a></li>
-                    <li><a href="support.html">Support</a></li>
-                    <li><a href="privacy.html">Privacy</a></li>
-                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="article5.html">Blockchain</a></li>
+                    <li><a href="article6.html" class="active">Electric Vehicles</a></li>
+                    <li><a href="article7.html">Cloud Computing</a></li>
                 </ul>
             </nav>
         </div>
@@ -29,66 +26,58 @@
 
     <main>
         <div class="container">
-            <article>
-                <img src="images/web-development.jpg" alt="Web Development Evolution">
-                <h2>The Evolution of Web Development</h2>
-                <p>Web development has seen significant changes over the years. Initially, web pages were static and written in HTML with some basic styling through CSS. Over time, however, JavaScript was introduced, transforming websites into dynamic, interactive applications. Today, developers are working with sophisticated frameworks like React, Angular, and Vue.js.</p>
-                
-                <h3>Key Milestones in Web Development</h3>
-                <p>Web development began with simple HTML pages, but with the advancement of the internet and the rise of mobile browsing, new technologies emerged to make websites more interactive, responsive, and feature-rich.</p>
+            <h2>The Rise of Electric Vehicles: Driving Towards a Sustainable Future</h2>
+            <img src="images/electric-vehicles.jpg" alt="Electric Vehicles" class="article-img">
 
-                <h4>1. The Birth of HTML and CSS</h4>
-                <p>In the early days, websites were simple HTML documents styled with basic CSS. These pages were static and often did not provide much interactivity beyond clicking links.</p>
+            <p>Electric Vehicles (EVs) are at the forefront of the shift towards cleaner, more sustainable transportation. By reducing reliance on fossil fuels and lowering greenhouse gas emissions, EVs are redefining the automotive industry.</p>
 
-                <h4>2. The Introduction of JavaScript</h4>
-                <p>JavaScript enabled the development of dynamic web pages. It allowed content to change in real-time based on user actions, such as clicking buttons or submitting forms.</p>
+            <h3>Benefits of Electric Vehicles</h3>
+            <ul>
+                <li><strong>Environmental Impact:</strong> Lower carbon emissions and reduced air pollution.</li>
+                <li><strong>Cost Efficiency:</strong> Savings on fuel and maintenance compared to traditional vehicles.</li>
+                <li><strong>Energy Diversification:</strong> Integration with renewable energy sources for charging.</li>
+                <li><strong>Advanced Technology:</strong> Smart features and autonomous driving capabilities.</li>
+            </ul>
 
-                <h4>3. The Rise of Front-End Frameworks</h4>
-                <p>With the growing complexity of web applications, front-end frameworks like React, Angular, and Vue.js became popular for building scalable and maintainable user interfaces. These frameworks enable developers to create Single Page Applications (SPAs) that load content dynamically without refreshing the page.</p>
+            <h3>Programming Example: EV Charging Simulation</h3>
+            <pre>
+# Python example for EV charging simulation
+class EV:
+    def __init__(self, battery_capacity):
+        self.battery_capacity = battery_capacity
+        self.charge_level = 0
 
-                <h4>4. The Mobile Revolution</h4>
-                <p>Responsive design emerged as a critical trend as mobile devices became more popular. Now, websites must adjust dynamically to different screen sizes, and frameworks like Bootstrap and Foundation help developers create mobile-friendly designs quickly.</p>
+    def charge(self, amount):
+        self.charge_level = min(self.charge_level + amount, self.battery_capacity)
+        return self.charge_level
 
-                <h4>5. The Future: WebAssembly and Progressive Web Apps (PWAs)</h4>
-                <p>In the future, technologies like WebAssembly will allow developers to write code in languages like C and C++ and run them in browsers at near-native speed. PWAs combine the best features of native apps and websites, enabling users to install web applications on their devices and use them offline.</p>
+# Simulate charging an EV
+my_ev = EV(battery_capacity=100)
+print("Initial charge level:", my_ev.charge_level)
+print("Charging...")
+my_ev.charge(50)
+print("Current charge level:", my_ev.charge_level)
+            </pre>
 
-                <h3>Practical Example: Building a Simple Web Page</h3>
-                <pre><code>
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;title&gt;My First Web Page&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;h1&gt;Hello, World!&lt;/h1&gt;
-    &lt;p&gt;This is a simple web page created with HTML&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-                </code></pre>
-                
-                <h3>Learn More About Web Development</h3>
-                <p>For a deeper dive into web development, check out these resources:</p>
-                <ul>
-                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN Web Docs - HTML</a></li>
-                    <li><a href="https://reactjs.org/" target="_blank">React Official Website</a></li>
-                    <li><a href="https://www.freecodecamp.org/learn/" target="_blank">FreeCodeCamp - Web Development</a></li>
-                </ul>
+            <h3>Challenges and Future Outlook</h3>
+            <blockquote>
+                <p>While EVs are gaining popularity, challenges like charging infrastructure, battery disposal, and high initial costs need to be addressed for widespread adoption.</p>
+            </blockquote>
 
-                <h3>Conclusion</h3>
-                <p>Web development continues to evolve at a rapid pace. From static HTML pages to complex web applications, the industry has seen remarkable advancements that make the internet a more dynamic and interactive place. Staying up-to-date with the latest tools and technologies is key to becoming a successful web developer.</p>
-
-                <a href="article7.html" class="read-more">Read Next Article</a>
-            </article>
+            <h3>Further Reading</h3>
+            <p>Learn more about the future of electric vehicles:</p>
+            <ul>
+                <li><a href="https://www.tesla.com/" target="_blank">Tesla: Leading the EV Revolution</a></li>
+                <li><a href="https://www.nissanusa.com/vehicles/electric-cars.html" target="_blank">Nissan Electric Cars</a></li>
+                <li><a href="https://www.iea.org/topics/transport/electric-vehicles" target="_blank">International Energy Agency: Electric Vehicles</a></li>
+            </ul>
         </div>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 ProBlog. All Rights Reserved. <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+            <p>&copy; 2024 ProBlog. All Rights Reserved.</p>
         </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
