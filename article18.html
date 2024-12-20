@@ -77,33 +77,6 @@ light.toggle()  # Turn off the light
     </div>
 </div>
 
-# Python code for controlling smart lights using IoT
-import time
-
-class SmartLight:
-    def __init__(self, status='off'):
-        self.status = status
-    
-    def turn_on(self):
-        self.status = 'on'
-        print("Light is now ON")
-    
-    def turn_off(self):
-        self.status = 'off'
-        print("Light is now OFF")
-    
-    def toggle(self):
-        if self.status == 'off':
-            self.turn_on()
-        else:
-            self.turn_off()
-
-# Example usage
-light = SmartLight()
-light.toggle()  # Turn on the light
-time.sleep(2)
-light.toggle()  # Turn off the light
-            
 
             <h3>Challenges of Smart Homes</h3>
             <p>While smart homes offer significant advantages, they come with their own set of challenges, such as concerns about privacy, security, and the complexity of managing multiple devices from different manufacturers.</p>
