@@ -167,6 +167,11 @@ img {
 
 /* Responsive Design Adjustments */
 
+
+
+
+
+
 /* On smaller screens, reduce padding and font size for better readability */
 @media (max-width: 768px) {
     .hero h2 {
@@ -289,3 +294,34 @@ a:hover {
   }
 }
 
+
+
+
+/* General Styles for Text Justification */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* Use a web-safe font for compatibility */
+  line-height: 1.6; /* Enhance readability */
+}
+
+p {
+  text-align: justify; /* Justify text */
+  margin: 10px 15px; /* Add some padding around paragraphs */
+}
+
+/* Responsive Adjustments for Smaller Screens */
+@media (max-width: 768px) {
+  p {
+    text-align: justify; /* Ensure consistent text alignment */
+    font-size: 14px; /* Reduce font size for smaller screens */
+    margin: 10px 10px; /* Adjust margins for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  p {
+    font-size: 12px; /* Further reduce font size for very small devices */
+    line-height: 1.4; /* Adjust line spacing for readability */
+  }
+}
