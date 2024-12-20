@@ -56,3 +56,24 @@ document.querySelectorAll('img').forEach(img => {
 
 // More performance improvements (optional)
 // Example: Apply event listeners for optimized rendering, animations, etc.
+
+
+
+// Dynamic font resizing based on viewport width
+window.addEventListener('resize', adjustFontSize);
+
+function adjustFontSize() {
+  const html = document.documentElement;
+  const width = window.innerWidth;
+
+  if (width <= 480) {
+    html.style.fontSize = '12px';
+  } else if (width <= 768) {
+    html.style.fontSize = '14px';
+  } else {
+    html.style.fontSize = '16px';
+  }
+}
+
+// Initialize on page load
+adjustFontSize();
