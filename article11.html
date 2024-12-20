@@ -67,20 +67,6 @@ exports.handler = async (event) => {
     </div>
 </div>
 
-// Example using AWS Lambda to create a simple cloud function
-const AWS = require('aws-sdk');
-const lambda = new AWS.Lambda();
-
-exports.handler = async (event) => {
-    const message = "Hello from AWS Lambda!";
-    console.log(message);
-    return {
-        statusCode: 200,
-        body: JSON.stringify(message),
-    };
-};
-            
-
             <h3>Challenges</h3>
             <blockquote>
                 <p>Despite the advantages, small businesses may face challenges like data privacy concerns, selecting the right platform, and adapting to new workflows.</p>
