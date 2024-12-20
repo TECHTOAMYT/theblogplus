@@ -76,26 +76,6 @@ print(f"Decrypted: {decrypted_message}")
     </div>
 </div>
 
-from cryptography.fernet import Fernet
-
-# Generate a key
-key = Fernet.generate_key()
-
-# Initialize the cipher
-cipher = Fernet(key)
-
-# Encrypt a message
-message = "Sensitive data"
-encrypted_message = cipher.encrypt(message.encode())
-
-# Decrypt the message
-decrypted_message = cipher.decrypt(encrypted_message).decode()
-
-print(f"Original: {message}")
-print(f"Encrypted: {encrypted_message}")
-print(f"Decrypted: {decrypted_message}")
-            
-
             <h3>Further Reading</h3>
             <p>Stay updated on cybersecurity best practices and new threats:</p>
             <ul>
