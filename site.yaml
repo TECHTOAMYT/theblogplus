@@ -15,7 +15,8 @@ settings:
   analytics:
     enabled: true
     provider: GoogleAnalytics
-    tracking_id: "UA-XXXXXXXXX-X"
+    tracking_id: "G-5L0CS3NR7H
+GT-K8GVWNHP"
 
 navigation:
   - label: Home
