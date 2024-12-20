@@ -1,3 +1,22 @@
+/* Code Block Button */
+.copy-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.copy-btn:hover {
+  background-color: #005f99;
+}
+
+
 /* Global Styling */
 body, html {
     margin: 0;
@@ -190,8 +209,11 @@ p {
 @media (max-width: 768px) {
   p {
     text-align: justify; /* Ensure consistent text alignment */
-    font-size: 14px; /* Reduce font size for smaller screens */
-    margin: 10px 10px; /* Adjust margins for smaller screens */
+    
+      
+   /*REMOVED   /* Reduce font size for smaller screens */
+  
+      margin: 10px 10px; /* Adjust margins for smaller screens */
   }
 }
 
