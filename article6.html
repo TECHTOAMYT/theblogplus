@@ -62,23 +62,6 @@ my_ev.charge(50)
 print("Current charge level:", my_ev.charge_level)
     </div>
 </div>
-
-# Python example for EV charging simulation
-class EV:
-    def __init__(self, battery_capacity):
-        self.battery_capacity = battery_capacity
-        self.charge_level = 0
-
-    def charge(self, amount):
-        self.charge_level = min(self.charge_level + amount, self.battery_capacity)
-        return self.charge_level
-
-# Simulate charging an EV
-my_ev = EV(battery_capacity=100)
-print("Initial charge level:", my_ev.charge_level)
-print("Charging...")
-my_ev.charge(50)
-print("Current charge level:", my_ev.charge_level)
             
 
             <h3>Challenges and Future Outlook</h3>
