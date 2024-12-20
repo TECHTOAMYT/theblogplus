@@ -220,3 +220,16 @@ img {
         font-size: 0.9rem;
     }
 }
+
+a {
+  text-decoration: none; /* Remove default underline */
+  color: #007BFF; /* Professional blue color */
+  font-weight: bold; /* Bold for emphasis */
+  transition: color 0.3s, text-shadow 0.3s; /* Smooth transition for hover effects */
+}
+
+a:hover {
+  color: #0056b3; /* Darker shade on hover */
+  text-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle glowing effect */
+}
+
