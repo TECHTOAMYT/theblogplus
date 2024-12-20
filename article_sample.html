@@ -57,13 +57,19 @@
 <div class="code-block">
   <div class="code-header">Programming Example: Building a Simple AI Chatbot</div>
   <div class="code-content">
-    # Python example of a simple AI chatbot
+"""
+Python example of a simple AI chatbot
+"""
 from transformers import pipeline
 
-# Load a pre-trained chatbot model
+"""
+Load a pre-trained chatbot model
+"""
 chatbot = pipeline("text-generation", model="gpt-2")
 
-# Chat loop
+"""
+Chat loop
+"""
 while True:
     user_input = input("You: ")
     if user_input.lower() == "exit":
