@@ -286,3 +286,59 @@ body {
 .copy-btn:hover {
   background-color: #005f99;
 }
+
+
+
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Center the search bar in the middle of the page */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Search Bar Styles */
+.search-bar {
+    display: flex;
+    width: 50%;
+    max-width: 600px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Field Styles */
+.search-bar input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+/* Button Styles */
+.search-bar button {
+    width: 10%;
+    padding: 10px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Button Hover Effect */
+.search-bar button:hover {
+    background-color: #45a049;
+}
