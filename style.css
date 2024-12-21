@@ -342,3 +342,101 @@ body {
 .search-bar button:hover {
     background-color: #45a049;
 }
+
+
+
+
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+  background-color: #fff;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+}
+
+button.mode-toggle {
+  background-color: transparent;
+  border: 2px solid #333;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80px;
+}
+
+button.mode-toggle .sun,
+button.mode-toggle .moon {
+  transition: all 0.3s ease;
+  position: absolute;
+}
+
+button.mode-toggle .moon {
+  left: 5px;
+}
+
+button.mode-toggle .sun {
+  right: 5px;
+}
+
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark-mode button.mode-toggle {
+  border-color: #fff;
+}
+
+body.dark-mode button.mode-toggle .sun {
+  transform: translateX(30px);
+}
+
+body.dark-mode button.mode-toggle .moon {
+  transform: translateX(30px);
+}
+
+/* Button animation for the sun and moon */
+button.mode-toggle:focus {
+  outline: none;
+}
+
+button.mode-toggle .sun {
+  font-size: 20px;
+  opacity: 1;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+button.mode-toggle .moon {
+  font-size: 20px;
+  opacity: 0;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+body.dark-mode button.mode-toggle .sun {
+  opacity: 0;
+}
+
+body.dark-mode button.mode-toggle .moon {
+  opacity: 1;
+}
+
+
