@@ -101,3 +101,28 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const modeToggleButton = document.getElementById("mode-toggle");
+  const body = document.body;
+
+  // Check for saved mode in localStorage and set the theme accordingly
+  if (localStorage.getItem("theme") === "dark") {
+    body.classList.add("dark-mode");
+  }
+
+  modeToggleButton.addEventListener("click", function () {
+    body.classList.toggle("dark-mode");
+
+    // Save the theme mode in localStorage
+    if (body.classList.contains("dark-mode")) {
+      localStorage.setItem("theme", "dark");
+    } else {
+      localStorage.setItem("theme", "light");
+    }
+  });
+});
+
+
+
