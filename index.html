@@ -71,9 +71,13 @@
       text-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle glowing effect */
     }
   </style>
+      <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
 
 </head>
 <body>
+    
+    
+    
     <!-- Loading Screen -->
     <div id="loading-screen">
         <div class="spinner"></div>
@@ -103,6 +107,14 @@
             <!-- Hero Section -->
             <section class="hero">
                 <h2>Welcome to ProBlog</h2>
+                
+                <div class="search-container">
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search ">
+            <button onclick="searchFunction()">⌕</button>
+        </div>
+    </div>
+                
                 <p>Your go-to destination for insightful articles on technology, trends, and much more!</p>
                 <a href="#articles" class="cta-btn">Explore Articles</a>
             </section>
@@ -265,5 +277,8 @@
     </footer>
 
     <script src="script.js"></script>
+    
+    
+    
 </body>
 </html>
