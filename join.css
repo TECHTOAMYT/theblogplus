@@ -1,0 +1,83 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  color: #fff;
+}
+
+/* Container Styles */
+.container {
+  text-align: center;
+}
+
+/* Login Box Styling */
+.login-box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.login-box h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.login-box p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* Animated Google Button */
+.google-login-button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background: transparent;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  animation: pulse 1.5s infinite;
+}
+
+.google-login-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* User Info Section */
+#user-info {
+  margin-top: 20px;
+  padding: 20px;
+  background: #fff;
+  color: #333;
+  border-radius: 10px;
+  text-align: center;
+  display: none;
+}
+
+#user-info img {
+  border-radius: 50%;
+  width: 80px;
+  margin-bottom: 10px;
+}
