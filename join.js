@@ -33,3 +33,4 @@ window.onload = () => {
 
   google.accounts.id.prompt();
 };
+
