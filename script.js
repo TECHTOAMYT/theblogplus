@@ -1,27 +1,3 @@
-// Add a copy functionality for code blocks
-document.addEventListener('DOMContentLoaded', () => {
-  const codeBlocks = document.querySelectorAll('.code-block');
-
-  codeBlocks.forEach((block) => {
-    const button = document.createElement('button');
-    button.textContent = 'Copy';
-    button.classList.add('copy-btn');
-    block.appendChild(button);
-
-    button.addEventListener('click', () => {
-      const code = block.querySelector('.code-content').textContent;
-      navigator.clipboard.writeText(code).then(() => {
-        button.textContent = 'Copied!';
-        setTimeout(() => {
-          button.textContent = 'Copy';
-        }, 2000);
-      });
-    });
-  });
-});
-
-
-
 
 // Loading Screen - Hide loading screen once content is loaded
 window.onload = function () {
